@@ -1,9 +1,10 @@
 /*
 /
  */
-import java.text.DecimalFormat;
-import java.util.Scanner;
+import java.text.DecimalFormat;//rounding
+import java.util.Scanner;//input
 public class Main {
+    //calculate the number of buses needd given a bus capacity
     public static int calcualte_buses_needed(int people){
         int capacity = 45;
         int busNeeded = people/capacity;
@@ -13,7 +14,7 @@ public class Main {
         }
         return busNeeded;
     }
-
+    //calculate cost per person
     public static int cost_per_person(int people, int bus){
         DecimalFormat df = new DecimalFormat("#.00");
         int cost = (125/people)*bus;
@@ -21,6 +22,7 @@ public class Main {
         int roundedAsInt = (int) Math.round(Double.parseDouble(rounded));
         return roundedAsInt;
     }
+    // main program
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter number of people need:");
