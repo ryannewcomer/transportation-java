@@ -9,7 +9,7 @@ public class Main {
         int busNeeded = people/capacity;
         int busNeedeMoudle = people % capacity;
         if (busNeedeMoudle > 0) {
-            busNeeded += 1
+            busNeeded += 1;
         }
         return busNeeded;
     };
