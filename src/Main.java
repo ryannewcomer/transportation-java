@@ -12,7 +12,7 @@ public class Main {
             busNeeded += 1;
         }
         return busNeeded;
-    };
+    }
 
     public static int cost_per_person(int people, int bus){
         DecimalFormat df = new DecimalFormat("#.00");
